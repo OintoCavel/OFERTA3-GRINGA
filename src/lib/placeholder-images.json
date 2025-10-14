@@ -1,3 +1,34 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-background",
+      "description": "A sensual, blurred image of a couple's silhouette.",
+      "imageUrl": "https://picsum.photos/seed/hero/1920/1080",
+      "imageHint": "couple silhouette"
+    },
+    {
+      "id": "expert-photo",
+      "description": "A professional portrait of the course instructor, Ramon Pereira.",
+      "imageUrl": "https://picsum.photos/seed/expert/400/400",
+      "imageHint": "man portrait"
+    },
+    {
+      "id": "testimonial-avatar-1",
+      "description": "Avatar for the first testimonial.",
+      "imageUrl": "https://picsum.photos/seed/avatar1/100/100",
+      "imageHint": "person avatar"
+    },
+    {
+      "id": "testimonial-avatar-2",
+      "description": "Avatar for the second testimonial.",
+      "imageUrl": "https://picsum.photos/seed/avatar2/100/100",
+      "imageHint": "person avatar"
+    },
+    {
+      "id": "testimonial-avatar-3",
+      "description": "Avatar for the third testimonial.",
+      "imageUrl": "https://picsum.photos/seed/avatar3/100/100",
+      "imageHint": "person avatar"
+    }
+  ]
 }
