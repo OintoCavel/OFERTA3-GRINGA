@@ -1,6 +1,12 @@
 {
   "placeholderImages": [
     {
+      "id": "devices-mockup",
+      "description": "Uma imagem mostrando a interface do curso em um laptop e em um celular.",
+      "imageUrl": "https://storage.googleapis.com/gemini-studio-main-images-public/11b6510d-2fe4-4e2e-8360-19343729904d/538a8e1b-b4a3-4155-b770-070894ac00c4.png",
+      "imageHint": "course interface"
+    },
+    {
       "id": "hero-background",
       "description": "A sensual, blurred image of a couple in a romantic setting.",
       "imageUrl": "https://picsum.photos/seed/passion/1920/1080",
