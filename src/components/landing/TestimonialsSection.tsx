@@ -60,7 +60,7 @@ export function TestimonialsSection() {
                     <div className="p-1">
                       <Card className="bg-card border-accent/30 h-full flex flex-col">
                         <CardContent className="p-6 flex-grow flex flex-col">
-                          <p className="text-muted-foreground italic flex-grow">"{testimonial.text}"</p>
+                          <p className="text-foreground italic flex-grow">"{testimonial.text}"</p>
                           <div className="mt-6 flex items-center space-x-4">
                             <Avatar>
                               {avatarImage && <AvatarImage src={avatarImage.imageUrl} alt={testimonial.name} data-ai-hint={avatarImage.imageHint} />}
