@@ -18,11 +18,11 @@ export function OfferSection() {
           
           <div className="text-left max-w-md mx-auto space-y-4 text-lg">
             <div className="flex items-center gap-3">
-              <Check className="h-6 w-6" />
+              <Check className="h-6 w-6 text-green-500" />
               <span>Acesso vitalício ao curso completo</span>
             </div>
             <div className="flex items-center gap-3">
-              <Check className="h-6 w-6" />
+              <Check className="h-6 w-6 text-green-500" />
               <span>Garantia incondicional de 7 dias</span>
             </div>
             <div className="flex items-center gap-3 font-bold text-white bg-black/20 p-3 rounded-md">

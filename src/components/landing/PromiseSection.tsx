@@ -19,7 +19,7 @@ export function PromiseSection() {
             <ul className="space-y-6">
               {benefits.map((benefit, index) => (
                 <li key={index} className="flex items-center space-x-4">
-                  <CheckCircle2 className="h-7 w-7 text-primary flex-shrink-0" />
+                  <CheckCircle2 className="h-7 w-7 text-green-500 flex-shrink-0" />
                   <span className="text-xl font-bold text-white">{benefit}</span>
                 </li>
               ))}

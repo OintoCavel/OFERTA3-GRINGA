@@ -45,7 +45,7 @@ export function ExpertSection() {
               <ul className="mt-6 space-y-3">
                 {credentials.map((cred, index) => (
                   <li key={index} className="flex items-center space-x-3">
-                    <CheckCircle2 className="h-6 w-6 text-primary flex-shrink-0" />
+                    <CheckCircle2 className="h-6 w-6 text-green-500 flex-shrink-0" />
                     <span className="text-lg text-muted-foreground font-semibold">{cred}</span>
                   </li>
                 ))}
