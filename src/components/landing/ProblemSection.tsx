@@ -19,7 +19,7 @@ export function ProblemSection() {
           <ul className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6 text-left">
             {benefits.map((benefit, index) => (
               <li key={index} className="flex items-start space-x-4">
-                <CheckCircle2 className="h-8 w-8 text-primary flex-shrink-0 mt-1" />
+                <CheckCircle2 className="h-8 w-8 text-green-500 flex-shrink-0 mt-1" />
                 <span className="text-lg text-white font-bold">{benefit}</span>
               </li>
             ))}
