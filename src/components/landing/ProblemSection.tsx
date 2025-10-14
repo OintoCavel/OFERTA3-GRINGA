@@ -3,7 +3,7 @@ import { CheckCircle2 } from "lucide-react";
 const benefits = [
   "Identificar e estimular o ponto exato para orgasmos intensos",
   "Técnicas de toques, ritmo e controle da mente feminina",
-  "Como proporcionar múltiplos orgasmos e jatos de prazer",
+  "Como proporcionar múltiplos orgasmos e jatos de prazer (Squirt)",
   "Posições e movimentos certos (demonstração explícita em vídeo)",
   "Tornar-se inesquecível e o melhor parceiro que ela já teve",
 ];
