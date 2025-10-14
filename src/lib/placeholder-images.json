@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "hero-background",
-      "description": "A sensual, blurred image of a couple's silhouette.",
-      "imageUrl": "https://picsum.photos/seed/hero/1920/1080",
-      "imageHint": "couple silhouette"
+      "description": "A sensual, blurred image of a couple in a romantic setting.",
+      "imageUrl": "https://picsum.photos/seed/passion/1920/1080",
+      "imageHint": "couple passion"
     },
     {
       "id": "expert-photo",
