@@ -1,26 +1,9 @@
-import Image from "next/image";
 import { PlayCircle } from "lucide-react";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { CtaButton } from "./CtaButton";
 
 export function HeroSection() {
-  const heroImage = PlaceHolderImages.find(
-    (img) => img.id === "hero-background"
-  );
-
   return (
-    <section className="relative min-h-screen flex items-center justify-center text-center overflow-hidden">
-      {heroImage && (
-        <Image
-          src={heroImage.imageUrl}
-          alt={heroImage.description}
-          fill
-          className="object-cover blur-sm brightness-50"
-          quality={80}
-          data-ai-hint={heroImage.imageHint}
-          priority
-        />
-      )}
+    <section className="relative min-h-screen flex items-center justify-center text-center overflow-hidden bg-black">
       <div className="relative z-10 container mx-auto px-4 py-20 flex flex-col items-center">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-black uppercase text-primary drop-shadow-lg">
           Você ainda não sabe fazer uma mulher gozar de verdade.
