@@ -25,11 +25,6 @@ const deliveries: Item[] = [
     description: "Assista às aulas no seu celular, tablet ou computador, a qualquer hora e em qualquer lugar."
   },
   { 
-    title: "Comunidade Secreta", 
-    icon: Heart,
-    description: "Troque experiências e tire dúvidas em um grupo exclusivo com outros alunos."
-  },
-  { 
     title: "Guia de Posições (E-book)", 
     icon: BookOpen,
     description: "Um guia com as melhores posições para levar o prazer dela a um novo nível."
@@ -66,7 +61,7 @@ export function CourseSection() {
             Um arsenal completo para se tornar o melhor sexo da vida dela.
           </p>
         </div>
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
           {deliveries.map((item, index) => (
             <Card key={index} className="bg-card border-accent/30 text-center hover:border-primary hover:-translate-y-2 transition-all duration-300 shadow-lg shadow-accent/10 hover:shadow-primary/20 flex flex-col">
               <CardHeader className="items-center">
