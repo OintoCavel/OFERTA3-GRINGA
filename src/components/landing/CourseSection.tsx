@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { BookOpen, Gift, Heart, Repeat, Target, TrendingUp, Video, Wind, Zap, Lock, Smartphone, Clapperboard, EyeOff } from "lucide-react";
+import { BookOpen, Gift, Heart, Repeat, Target, TrendingUp, Video, Wind, Zap, Lock, Smartphone, Clapperboard, EyeOff, Timer } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
 type Item = {
@@ -33,14 +33,14 @@ const deliveries: Item[] = [
 
 const bonuses: Item[] = [
     {
-        title: "Bônus 1: Guia de Posições",
-        icon: BookOpen,
-        description: "Um e-book com as melhores posições para maximizar o prazer dela."
+        title: "Bônus 1: Como demorar mais para gozar",
+        icon: Timer,
+        description: "Aprenda técnicas de controle para prolongar o prazer e impressioná-la."
     },
     {
-        title: "Bônus 2: Aulas em vídeo",
-        icon: Video,
-        description: "Demonstrações explícitas para você ver e aprender na prática."
+        title: "Bônus 2: Como ter uma ereção mais firme",
+        icon: Zap,
+        description: "Descubra segredos para ereções mais fortes e duradouras."
     }
 ]
 
