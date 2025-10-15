@@ -1,4 +1,4 @@
-import { PlayCircle } from "lucide-react";
+import { Crown, PlayCircle, UserCheck } from "lucide-react";
 import { CtaButton } from "./CtaButton";
 
 export function HeroSection() {
@@ -19,6 +19,16 @@ export function HeroSection() {
               </button>
             </div>
           </div>
+        </div>
+        <div className="mt-8 text-center">
+          <div className="flex items-center justify-center gap-2 text-primary font-bold text-lg">
+            <Crown className="h-6 w-6" />
+            <span>ACESSO VITALÍCIO</span>
+          </div>
+          <p className="mt-2 text-white font-semibold text-lg flex items-center justify-center gap-2">
+            <UserCheck className="h-6 w-6 text-primary" />
+            <span>+35 mil homens já transformaram a sua vida sexual</span>
+          </p>
         </div>
         <div className="mt-12">
           <CtaButton />
