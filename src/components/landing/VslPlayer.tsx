@@ -19,7 +19,7 @@ const VslPlayer: React.FC = () => {
 
     // Cria o script
     const s = document.createElement('script');
-    s.src = "https://scripts.converteai.net/c1c20a84-235e-4f45-9214-9016757e36c5/players/68eefe6d94f152eea80d3088/v4/player.js";
+    s.src = "https://scripts.converteai.net/c1c20a84-235e-4f45-9214-9016757e36c5/players/68ef97f9413b036059a1ff6d/v4/player.js";
     s.async = true; // Use async em vez de defer para carregamento mais moderno
     scriptRef.current = s;
 
@@ -57,9 +57,9 @@ const VslPlayer: React.FC = () => {
 
   return (
     <div ref={containerRef} id="vturb-container" style={{ display: 'block', margin: '0 auto', width: '100%', maxWidth: '400px' }}>
-      <div id="vid-68eefe6d94f152eea80d3088"></div>
+      <div id="vid-68ef97f9413b036059a1ff6d"></div>
       <p id="vturb-fallback" style={{ textAlign: 'center', display: 'none', color: 'white' }}>
-        Seu vídeo está demorando a carregar. <a href="https://vturb.com/vid/68eefe6d94f152eea80d3088" target="_blank" rel="noopener noreferrer" style={{ color: '#00bfff' }}>Clique aqui para assistir</a>.
+        Seu vídeo está demorando a carregar. <a href="https://vturb.com/vid/68ef97f9413b036059a1ff6d" target="_blank" rel="noopener noreferrer" style={{ color: '#00bfff' }}>Clique aqui para assistir</a>.
       </p>
     </div>
   );
