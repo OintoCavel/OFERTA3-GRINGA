@@ -5,8 +5,10 @@ import { CtaButton } from "./CtaButton";
 
 export function HeroSection() {
   useEffect(() => {
-    const scriptId = "vsl-script";
-    // Evita adicionar o script várias vezes se o componente re-renderizar
+    const scriptId = "vsl-script-68eefe6d94f152eea80d3088";
+    const vturbPlayerId = "vid-68eefe6d94f152eea80d3088";
+
+    // Se o script já existe, não faz nada para evitar duplicação.
     if (document.getElementById(scriptId)) {
       return;
     }
@@ -17,19 +19,18 @@ export function HeroSection() {
     script.async = true;
     document.head.appendChild(script);
 
-    // Limpa o script se o componente for desmontado
+    // Função de limpeza que será executada quando o componente for desmontado.
     return () => {
       const existingScript = document.getElementById(scriptId);
       if (existingScript) {
-        // A biblioteca do player pode ter se anexado ao body, então tentamos limpar
-        try {
-            document.head.removeChild(existingScript);
-        } catch (e) {
-            // Ignora o erro se o script não puder ser removido
-        }
+        document.head.removeChild(existingScript);
       }
+      
+      // A Vturb pode criar elementos adicionais no body. Esta parte ajuda a limpá-los.
+      const playerElements = document.querySelectorAll(`[data-player-id*="${vturbPlayerId}"]`);
+      playerElements.forEach(el => el.remove());
     };
-  }, []);
+  }, []); // O array de dependências vazio garante que o efeito rode apenas uma vez.
 
   return (
     <section className="relative min-h-screen flex items-center justify-center text-center overflow-hidden bg-black">
@@ -41,8 +42,8 @@ export function HeroSection() {
           Descubra o método que já ajudou mais de 35.000 homens a proporcionarem orgasmos múltiplos e a liberarem jatos de prazer nas suas parceiras.
         </p>
 
-        <div className="mt-8 w-full max-w-xl mx-auto">
-           {/* O elemento div onde o player de vídeo será montado */}
+        <div className="mt-8 w-full max-w-2xl mx-auto">
+           {/* O elemento div onde o player de vídeo Vturb será montado */}
            <div id="vid-68eefe6d94f152eea80d3088" style={{display: 'block', margin: '0 auto', width: '100%'}}></div>
         </div>
         
