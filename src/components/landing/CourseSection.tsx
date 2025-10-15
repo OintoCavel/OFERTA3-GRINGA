@@ -10,27 +10,27 @@ type Item = {
 
 const modules: Item[] = [
   { 
-    title: "Módulo 1: Anatomia do Prazer", 
+    title: "Anatomia do Prazer", 
     icon: Target,
     description: "Mapeie os pontos de prazer da mulher e entenda como estimulá-los."
   },
   { 
-    title: "Módulo 2: Técnicas de Toque", 
+    title: "Técnicas de Toque", 
     icon: Wind,
     description: "Aprenda a usar as mãos e a boca para levar ela à loucura."
   },
   { 
-    title: "Módulo 3: Orgasmos Múltiplos", 
+    title: "Orgasmos Múltiplos", 
     icon: TrendingUp,
     description: "Domine a arte de proporcionar orgasmos em sequência."
   },
   { 
-    title: "Módulo 4: Squirt e Liberação", 
+    title: "Squirt e Liberação", 
     icon: Zap,
     description: "Como ativar a zona de gozo explosivo e liberar jatos de prazer."
   },
   { 
-    title: "Módulo 5: Conexão e Vício", 
+    title: "Conexão e Vício", 
     icon: Repeat,
     description: "Pós-gozo: crie uma conexão profunda e mantenha ela viciada em você."
   },
