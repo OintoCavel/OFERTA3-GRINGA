@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Award, BookOpen, Gift, Heart, Repeat, Target, TrendingUp, Video, Wind, Zap, Lock, Tv, Smartphone } from "lucide-react";
+import { BookOpen, Gift, Heart, Repeat, Target, TrendingUp, Video, Wind, Zap, Lock, Smartphone, Clapperboard } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
 type Item = {
@@ -9,15 +9,15 @@ type Item = {
 };
 
 const deliveries: Item[] = [
+  {
+    title: "+40 Aulas com Vídeos Explícitos",
+    icon: Clapperboard,
+    description: "Aprenda na prática com demonstrações detalhadas e sem censura."
+  },
   { 
     title: "Acesso Vitalício ao Curso", 
     icon: Lock,
     description: "Pague uma vez e acesse o conteúdo para sempre, incluindo todas as futuras atualizações."
-  },
-  { 
-    title: "Aulas em Vídeo HD", 
-    icon: Video,
-    description: "Aprenda com demonstrações práticas e detalhadas em alta definição."
   },
   { 
     title: "Acesso em Qualquer Dispositivo", 
