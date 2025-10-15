@@ -1,4 +1,3 @@
-
 'use client';
 import { useEffect } from 'react';
 import { Crown, UserCheck } from "lucide-react";
@@ -33,7 +32,7 @@ export function HeroSection() {
           Descubra o método que já ajudou mais de 35.000 homens a proporcionarem orgasmos múltiplos e a liberarem jatos de prazer nas suas parceiras.
         </p>
         <div className="mt-12 w-full max-w-3xl mx-auto">
-            <div id="vid-68eefe6d94f152eea80d3088" style={{display: 'block', margin: '0 auto', width: '100%'}}></div>
+          <div id="vid-68eefe6d94f152eea80d3088" style={{display: 'block', margin: '0 auto', width: '100%'}}></div>
         </div>
         <div className="mt-8 text-center">
           <div className="flex items-center justify-center gap-2 text-primary font-bold text-lg">
