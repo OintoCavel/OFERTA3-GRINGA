@@ -11,7 +11,7 @@ export function CtaButton({ className, ...props }: ButtonProps) {
       )}
       {...props}
     >
-      QUERO SUPERAR AGORA
+      QUERO FAZER ELA GOZAR COMIGO
       <ArrowRight className="ml-2 h-6 w-6" />
     </Button>
   );
