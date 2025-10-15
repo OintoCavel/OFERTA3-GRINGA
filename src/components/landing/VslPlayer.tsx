@@ -59,7 +59,7 @@ const VslPlayer: React.FC = () => {
     <div ref={containerRef} id="vturb-container" style={{ display: 'block', margin: '0 auto', width: '100%', maxWidth: '400px' }}>
       <div id="vid-68eefe6d94f152eea80d3088"></div>
       <p id="vturb-fallback" style={{ textAlign: 'center', display: 'none', color: 'white' }}>
-        Seu vídeo está demorando a carregar. <a href="https://vturb.com/vid/68eefe6d94f152eea80d3088" target="_blank" style={{ color: '#00bfff' }}>Clique aqui para assistir</a>.
+        Seu vídeo está demorando a carregar. <a href="https://vturb.com/vid/68eefe6d94f152eea80d3088" target="_blank" rel="noopener noreferrer" style={{ color: '#00bfff' }}>Clique aqui para assistir</a>.
       </p>
     </div>
   );
