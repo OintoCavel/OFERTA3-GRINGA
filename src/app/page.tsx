@@ -9,8 +9,13 @@ import { OfferSection } from '@/components/landing/OfferSection';
 import { FaqSection } from '@/components/landing/FaqSection';
 import { Footer } from '@/components/landing/Footer';
 import { StickyCta } from '@/components/landing/StickyCta';
+import Image from 'next/image';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function Home() {
+  const devicesImage = PlaceHolderImages.find(
+    (img) => img.id === 'devices-mockup'
+  );
   return (
     <div className="bg-background text-foreground flex flex-col min-h-screen">
       <Header />
@@ -18,6 +23,22 @@ export default function Home() {
         <HeroSection />
         <ProblemSection />
         <PromiseSection />
+        {devicesImage && (
+          <section className="py-20 lg:py-32 bg-background">
+            <div className="container mx-auto px-4">
+              <div className="flex justify-center">
+                <Image
+                  src={devicesImage.imageUrl}
+                  alt={devicesImage.description}
+                  width={1024}
+                  height={576}
+                  className="rounded-lg shadow-2xl shadow-primary/20 object-cover"
+                  data-ai-hint={devicesImage.imageHint}
+                />
+              </div>
+            </div>
+          </section>
+        )}
         <CourseSection />
         <ExpertSection />
         <TestimonialsSection />
