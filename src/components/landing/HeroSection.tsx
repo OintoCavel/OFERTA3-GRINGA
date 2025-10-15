@@ -15,16 +15,14 @@ export function HeroSection() {
           Descubra o método que já ajudou mais de 35.000 homens a proporcionarem orgasmos múltiplos e a liberarem jatos de prazer nas suas parceiras.
         </p>
         <div className="mt-12 w-full max-w-3xl mx-auto">
-            {devicesImage && (
-                <Image
-                    src={devicesImage.imageUrl}
-                    alt={devicesImage.description}
-                    width={600}
-                    height={400}
-                    className="rounded-lg shadow-2xl shadow-primary/20 object-cover"
-                    data-ai-hint={devicesImage.imageHint}
-                />
-            )}
+          <Image
+            src="https://i.ibb.co/LhsBDvS9/Design-sem-nome-15.png"
+            alt="Product mockup"
+            width={800}
+            height={450}
+            className="rounded-lg shadow-2xl shadow-primary/20 object-cover"
+            data-ai-hint="course mockup"
+          />
         </div>
         <div className="mt-8 text-center">
           <div className="flex items-center justify-center gap-2 text-primary font-bold text-lg">
