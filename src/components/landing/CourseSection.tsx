@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Award, BookOpen, Gift, Heart, Repeat, Target, TrendingUp, Video, Wind, Zap } from "lucide-react";
+import { Award, BookOpen, Gift, Heart, Repeat, Target, TrendingUp, Video, Wind, Zap, Lock, Tv, Smartphone } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
 type Item = {
@@ -8,31 +8,31 @@ type Item = {
   description: string;
 };
 
-const modules: Item[] = [
+const deliveries: Item[] = [
   { 
-    title: "Anatomia do Prazer", 
-    icon: Target,
-    description: "Mapeie os pontos de prazer da mulher e entenda como estimulá-los."
+    title: "Acesso Vitalício ao Curso", 
+    icon: Lock,
+    description: "Pague uma vez e acesse o conteúdo para sempre, incluindo todas as futuras atualizações."
   },
   { 
-    title: "Técnicas de Toque", 
-    icon: Wind,
-    description: "Aprenda a usar as mãos e a boca para levar ela à loucura."
+    title: "Aulas em Vídeo HD", 
+    icon: Video,
+    description: "Aprenda com demonstrações práticas e detalhadas em alta definição."
   },
   { 
-    title: "Orgasmos Múltiplos", 
-    icon: TrendingUp,
-    description: "Domine a arte de proporcionar orgasmos em sequência."
+    title: "Acesso em Qualquer Dispositivo", 
+    icon: Smartphone,
+    description: "Assista às aulas no seu celular, tablet ou computador, a qualquer hora e em qualquer lugar."
   },
   { 
-    title: "Squirt e Liberação", 
-    icon: Zap,
-    description: "Como ativar a zona de gozo explosivo e liberar jatos de prazer."
+    title: "Comunidade Secreta", 
+    icon: Heart,
+    description: "Troque experiências e tire dúvidas em um grupo exclusivo com outros alunos."
   },
   { 
-    title: "Conexão e Vício", 
-    icon: Repeat,
-    description: "Pós-gozo: crie uma conexão profunda e mantenha ela viciada em você."
+    title: "Guia de Posições (E-book)", 
+    icon: BookOpen,
+    description: "Um guia com as melhores posições para levar o prazer dela a um novo nível."
   },
 ];
 
@@ -67,16 +67,16 @@ export function CourseSection() {
           </p>
         </div>
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {modules.map((module, index) => (
+          {deliveries.map((item, index) => (
             <Card key={index} className="bg-card border-accent/30 text-center hover:border-primary hover:-translate-y-2 transition-all duration-300 shadow-lg shadow-accent/10 hover:shadow-primary/20 flex flex-col">
               <CardHeader className="items-center">
                 <div className="p-4 bg-accent/20 rounded-full">
-                  <module.icon className="h-8 w-8 text-primary" />
+                  <item.icon className="h-8 w-8 text-primary" />
                 </div>
-                <CardTitle className="text-xl font-bold text-white pt-2">{module.title}</CardTitle>
+                <CardTitle className="text-xl font-bold text-white pt-2">{item.title}</CardTitle>
               </CardHeader>
               <CardContent className="flex-grow">
-                <p className="text-muted-foreground">{module.description}</p>
+                <p className="text-muted-foreground">{item.description}</p>
               </CardContent>
             </Card>
           ))}
