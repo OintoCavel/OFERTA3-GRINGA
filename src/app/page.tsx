@@ -8,7 +8,6 @@ import { TestimonialsSection } from '@/components/landing/TestimonialsSection';
 import { OfferSection } from '@/components/landing/OfferSection';
 import { FaqSection } from '@/components/landing/FaqSection';
 import { Footer } from '@/components/landing/Footer';
-import { StickyCta } from '@/components/landing/StickyCta';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
@@ -27,7 +26,6 @@ export default function Home() {
         <FaqSection />
       </main>
       <Footer />
-      <StickyCta />
     </div>
   );
 }
