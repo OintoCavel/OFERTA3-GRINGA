@@ -6,6 +6,7 @@ import { CtaButton } from "./CtaButton";
 export function HeroSection() {
   useEffect(() => {
     const scriptId = "vsl-script";
+    // Evita adicionar o script várias vezes se o componente re-renderizar
     if (document.getElementById(scriptId)) {
       return;
     }
@@ -16,10 +17,16 @@ export function HeroSection() {
     script.async = true;
     document.head.appendChild(script);
 
+    // Limpa o script se o componente for desmontado
     return () => {
       const existingScript = document.getElementById(scriptId);
       if (existingScript) {
-        document.head.removeChild(existingScript);
+        // A biblioteca do player pode ter se anexado ao body, então tentamos limpar
+        try {
+            document.head.removeChild(existingScript);
+        } catch (e) {
+            // Ignora o erro se o script não puder ser removido
+        }
       }
     };
   }, []);
@@ -34,11 +41,9 @@ export function HeroSection() {
           Descubra o método que já ajudou mais de 35.000 homens a proporcionarem orgasmos múltiplos e a liberarem jatos de prazer nas suas parceiras.
         </p>
 
-        <div className="mt-8 w-full max-w-2xl">
-          <div
-            id="vid-68eefe6d94f152eea80d3088"
-            style={{display: 'block', margin: '0 auto', width: '100%'}}
-          ></div>
+        <div className="mt-8 w-full max-w-xl mx-auto">
+           {/* O elemento div onde o player de vídeo será montado */}
+           <div id="vid-68eefe6d94f152eea80d3088" style={{display: 'block', margin: '0 auto', width: '100%'}}></div>
         </div>
         
         <div className="mt-8 text-center">
