@@ -1,10 +1,28 @@
-import Image from "next/image";
-import { Crown, PlayCircle, UserCheck } from "lucide-react";
+
+'use client';
+import { useEffect } from 'react';
+import { Crown, UserCheck } from "lucide-react";
 import { CtaButton } from "./CtaButton";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 export function HeroSection() {
-    const devicesImage = PlaceHolderImages.find(p => p.id === "devices-mockup");
+    useEffect(() => {
+        if (document.querySelector('script[src*="v4/player.js"]')) {
+            return;
+        }
+
+        const script = document.createElement("script");
+        script.src = "https://scripts.converteai.net/c1c20a84-235e-4f45-9214-9016757e36c5/players/68eefe6d94f152eea80d3088/v4/player.js";
+        script.async = true;
+        document.head.appendChild(script);
+
+        return () => {
+            const scriptTag = document.querySelector(`script[src='${script.src}']`);
+            if (scriptTag) {
+                document.head.removeChild(scriptTag);
+            }
+        }
+    }, []);
+
   return (
     <section className="relative min-h-screen flex items-center justify-center text-center overflow-hidden bg-black">
       <div className="relative z-10 container mx-auto px-4 py-20 flex flex-col items-center">
@@ -15,14 +33,7 @@ export function HeroSection() {
           Descubra o método que já ajudou mais de 35.000 homens a proporcionarem orgasmos múltiplos e a liberarem jatos de prazer nas suas parceiras.
         </p>
         <div className="mt-12 w-full max-w-3xl mx-auto">
-          <Image
-            src="https://i.ibb.co/LhsBDvS9/Design-sem-nome-15.png"
-            alt="Product mockup"
-            width={800}
-            height={450}
-            className="rounded-lg shadow-2xl shadow-primary/20 object-cover"
-            data-ai-hint="course mockup"
-          />
+            <div id="vid-68eefe6d94f152eea80d3088" style={{display: 'block', margin: '0 auto', width: '100%'}}></div>
         </div>
         <div className="mt-8 text-center">
           <div className="flex items-center justify-center gap-2 text-primary font-bold text-lg">
