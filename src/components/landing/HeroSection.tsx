@@ -1,8 +1,10 @@
 'use client';
 import { Crown, UserCheck } from "lucide-react";
 import { CtaButton } from "./CtaButton";
+import VslPlayer from "./VslPlayer";
 
 export function HeroSection() {
+
   return (
     <section className="relative min-h-screen flex items-center justify-center text-center overflow-hidden bg-black">
       <div className="relative z-10 container mx-auto px-4 py-20 flex flex-col items-center">
@@ -13,15 +15,8 @@ export function HeroSection() {
           Descubra o método que já ajudou mais de 35.000 homens a proporcionarem orgasmos múltiplos e a liberarem jatos de prazer nas suas parceiras.
         </p>
 
-        <div className="mt-8 w-full max-w-2xl mx-auto aspect-video">
-          <iframe
-            className="w-full h-full rounded-lg shadow-lg"
-            src="https://www.youtube.com/embed/JGu9PkpU3o8"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
+        <div className="mt-8 w-full max-w-2xl mx-auto">
+          <VslPlayer />
         </div>
         
         <div className="mt-8 text-center">
