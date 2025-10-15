@@ -6,23 +6,16 @@ export function OfferSection() {
   return (
     <section className="py-20 lg:py-32 bg-accent/10">
       <div className="container mx-auto px-4">
-        <div className="max-w-md mx-auto bg-card rounded-xl shadow-2xl shadow-black/40 text-center text-primary-foreground p-8 lg:p-12">
-          <h2 className="text-4xl lg:text-5xl font-black uppercase">Quanto vai custar tudo isso?</h2>
+        <div className="max-w-md w-full mx-auto bg-card rounded-xl shadow-2xl shadow-black/40 text-center text-primary-foreground p-8 lg:p-12">
+          <h2 className="text-4xl lg:text-5xl font-black uppercase">Oferta Especial</h2>
+          <p className="mt-4 text-lg text-muted-foreground">Adquira hoje o acesso completo com um desconto imperdível.</p>
           
-          <div className="my-10 text-left space-y-4 text-lg border-b border-border pb-6">
-            <div className="flex justify-between items-center text-muted-foreground">
-              <span>Acesso Vitalício</span>
-              <span className="line-through">R$97,00</span>
+          <div className="my-8 flex flex-col items-center justify-center">
+            <span className="text-2xl lg:text-3xl font-bold line-through text-muted-foreground">De R$97</span>
+            <div className="flex items-baseline my-2">
+                <span className="text-lg lg:text-xl font-bold mr-2">POR APENAS</span>
+                <span className="text-6xl lg:text-7xl font-black text-primary">R$27</span>
             </div>
-            <div className="flex justify-between items-center text-muted-foreground">
-              <span>Bônus Exclusivos</span>
-              <span className="line-through">R$47,00</span>
-            </div>
-          </div>
-
-          <div className="my-8 flex flex-col items-center">
-            <span className="text-xl line-through opacity-70">De R$144</span>
-            <span className="text-5xl lg:text-7xl font-black my-2 text-yellow-400">TOTAL: R$27</span>
             <span className="text-base text-muted-foreground">ou 12x de R$2,70</span>
           </div>
 
