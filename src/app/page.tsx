@@ -13,9 +13,6 @@ import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function Home() {
-  const devicesImage = PlaceHolderImages.find(
-    (img) => img.id === 'devices-mockup'
-  );
   return (
     <div className="bg-background text-foreground flex flex-col min-h-screen">
       <Header />
@@ -23,22 +20,20 @@ export default function Home() {
         <HeroSection />
         <ProblemSection />
         <PromiseSection />
-        {devicesImage && (
-          <section className="py-20 lg:py-32 bg-background">
-            <div className="container mx-auto px-4">
-              <div className="flex justify-center">
-                <Image
-                  src={devicesImage.imageUrl}
-                  alt={devicesImage.description}
-                  width={1024}
-                  height={576}
-                  className="rounded-lg shadow-2xl shadow-primary/20 object-cover"
-                  data-ai-hint={devicesImage.imageHint}
-                />
-              </div>
+        <section className="py-20 lg:py-32 bg-background">
+          <div className="container mx-auto px-4">
+            <div className="flex justify-center">
+              <Image
+                src="https://www.guiaviagensbrasil.com/imagens/praia-costa-itacare-ba-9599.jpg"
+                alt="Imagem de uma praia"
+                width={1024}
+                height={576}
+                className="rounded-lg shadow-2xl shadow-primary/20 object-cover"
+                data-ai-hint="beach landscape"
+              />
             </div>
-          </section>
-        )}
+          </div>
+        </section>
         <CourseSection />
         <ExpertSection />
         <TestimonialsSection />
