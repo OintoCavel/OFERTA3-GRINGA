@@ -32,10 +32,10 @@ const testimonials = [
 
 export function TestimonialsSection() {
   return (
-    <section className="py-20 lg:py-32 bg-background">
+    <section className="py-20 lg:py-32 bg-white text-black">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl lg:text-5xl font-black text-white">
+            <h2 className="text-3xl lg:text-5xl font-black">
                 O que eles estão dizendo depois de <span className="text-primary">aplicar o método</span>
             </h2>
         </div>
@@ -58,16 +58,16 @@ export function TestimonialsSection() {
                 return (
                   <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                     <div className="p-1">
-                      <Card className="bg-card border-accent/30 h-full flex flex-col">
+                      <Card className="bg-gray-100 border-gray-200 h-full flex flex-col shadow-lg">
                         <CardContent className="p-6 flex-grow flex flex-col">
-                          <p className="text-foreground italic flex-grow">"{testimonial.text}"</p>
+                          <p className="text-gray-700 italic flex-grow">"{testimonial.text}"</p>
                           <div className="mt-6 flex items-center space-x-4">
                             <Avatar>
                               {avatarImage && <AvatarImage src={avatarImage.imageUrl} alt={testimonial.name} data-ai-hint={avatarImage.imageHint} />}
                               <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
                             </Avatar>
                             <div>
-                              <p className="font-bold text-white">{testimonial.name}</p>
+                              <p className="font-bold text-black">{testimonial.name}</p>
                             </div>
                           </div>
                         </CardContent>
@@ -77,8 +77,8 @@ export function TestimonialsSection() {
                 );
               })}
             </CarouselContent>
-            <CarouselPrevious className="text-white hover:text-primary hover:bg-accent/50" />
-            <CarouselNext className="text-white hover:text-primary hover:bg-accent/50" />
+            <CarouselPrevious className="text-black hover:text-primary hover:bg-gray-200" />
+            <CarouselNext className="text-black hover:text-primary hover:bg-gray-200" />
           </Carousel>
         </div>
       </div>
