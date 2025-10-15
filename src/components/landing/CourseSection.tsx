@@ -19,8 +19,8 @@ export function CourseSection() {
     <section className="py-20 lg:py-32 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl lg:text-5xl font-black text-white">
-            O que você vai aprender na <span className="text-primary">prática</span>
+          <h2 className="text-3xl lg:text-5xl font-black text-white uppercase">
+            O que você vai <span className="text-primary">receber</span>
           </h2>
         </div>
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
