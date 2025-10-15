@@ -8,7 +8,7 @@ export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center text-center overflow-hidden bg-black">
       <div className="relative z-10 container mx-auto px-4 py-20 flex flex-col items-center">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-black uppercase text-primary drop-shadow-lg">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-black uppercase text-destructive drop-shadow-lg">
           Você ainda não sabe fazer uma mulher gozar de verdade.
         </h1>
         <p className="mt-6 max-w-3xl text-lg md:text-2xl font-bold text-white drop-shadow-md">
