@@ -1,7 +1,10 @@
+import Image from "next/image";
 import { Crown, PlayCircle, UserCheck } from "lucide-react";
 import { CtaButton } from "./CtaButton";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 export function HeroSection() {
+    const devicesImage = PlaceHolderImages.find(p => p.id === "devices-mockup");
   return (
     <section className="relative min-h-screen flex items-center justify-center text-center overflow-hidden bg-black">
       <div className="relative z-10 container mx-auto px-4 py-20 flex flex-col items-center">
@@ -12,13 +15,16 @@ export function HeroSection() {
           Descubra o método que já ajudou mais de 35.000 homens a proporcionarem orgasmos múltiplos e a liberarem jatos de prazer nas suas parceiras.
         </p>
         <div className="mt-12 w-full max-w-3xl mx-auto">
-          <div className="relative aspect-video bg-black/50 rounded-lg overflow-hidden border-2 border-primary/50 shadow-2xl shadow-primary/20">
-            <div className="absolute inset-0 flex items-center justify-center">
-              <button className="text-white/70 hover:text-white transition-colors" aria-label="Play Video">
-                <PlayCircle className="w-20 h-20 md:w-24 md:h-24 drop-shadow-lg" />
-              </button>
-            </div>
-          </div>
+            {devicesImage && (
+                <Image
+                    src={devicesImage.imageUrl}
+                    alt={devicesImage.description}
+                    width={600}
+                    height={400}
+                    className="rounded-lg shadow-2xl shadow-primary/20 object-cover"
+                    data-ai-hint={devicesImage.imageHint}
+                />
+            )}
         </div>
         <div className="mt-8 text-center">
           <div className="flex items-center justify-center gap-2 text-primary font-bold text-lg">
