@@ -39,11 +39,13 @@ export function OfferSection() {
           </div>
 
           <div className="mt-10">
-            <Button
-                className="bg-primary hover:bg-primary/90 text-primary-foreground font-black text-lg lg:text-xl py-8 px-10 rounded-md shadow-lg shadow-primary/30 transform transition-transform hover:scale-105 uppercase tracking-wider w-full"
-            >
-                QUERO FAZER ELA GOZAR COMIGO
-            </Button>
+            <a href="https://pay.cakto.com.br/egqp7mr_616569" target="_blank" rel="noopener noreferrer" className="w-full block">
+              <Button
+                  className="bg-primary hover:bg-primary/90 text-primary-foreground font-black text-lg lg:text-xl py-8 px-10 rounded-md shadow-lg shadow-primary/30 transform transition-transform hover:scale-105 uppercase tracking-wider w-full"
+              >
+                  QUERO FAZER ELA GOZAR COMIGO
+              </Button>
+            </a>
           </div>
           
           <div className="mt-10 grid grid-cols-2 lg:grid-cols-3 gap-6 text-sm text-muted-foreground justify-center">
