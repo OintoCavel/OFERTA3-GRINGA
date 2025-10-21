@@ -2,6 +2,7 @@
 import { Crown, UserCheck } from "lucide-react";
 import { CtaButton } from "./CtaButton";
 import React from 'react';
+import VslPlayer from './VslPlayer';
 
 export function HeroSection() {
 
@@ -15,6 +16,10 @@ export function HeroSection() {
           Descubra o método que já ajudou mais de 35.000 homens a proporcionarem orgasmos múltiplos e a liberarem jatos de prazer nas suas parceiras.
         </p>
         
+        <div className="mt-8 max-w-4xl w-full">
+            <VslPlayer />
+        </div>
+
         <div className="mt-8 text-center">
           <div className="flex items-center justify-center gap-2 text-primary font-bold text-lg">
             <Crown className="h-6 w-6" />
