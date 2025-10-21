@@ -16,7 +16,7 @@ export default function Home() {
       <Header />
       <main className="flex-grow">
         <HeroSection />
-        <section className="py-12 lg:py-16 bg-background">
+        <section className="py-12 lg:py-16 bg-white">
           <div className="container mx-auto px-4">
             <VslPlayer />
           </div>
