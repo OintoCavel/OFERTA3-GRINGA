@@ -9,6 +9,7 @@ import { OfferSection } from '@/components/landing/OfferSection';
 import { FaqSection } from '@/components/landing/FaqSection';
 import { Footer } from '@/components/landing/Footer';
 
+
 export default function Home() {
   return (
     <div className="bg-background text-foreground flex flex-col min-h-screen">

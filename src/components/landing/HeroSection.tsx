@@ -2,27 +2,7 @@
 import { Crown, UserCheck } from "lucide-react";
 import { CtaButton } from "./CtaButton";
 import React from 'react';
-
-const VslPlayer: React.FC = () => {
-  const videoId = '68f2379a2e660626af40222d';
-  const scriptSrc = 'https://scripts.converteai.net/363a1829-2843-4b85-bbad-f7f249265a4a/players/68f2379a2e660626af40222d/v4/player.js';
-
-  const htmlContent = `
-    <div id="vid-${videoId}" style="display: block; margin: 0 auto; width: 100%; max-width: 800px;"></div>
-    <script>
-      (function() {
-        if (document.querySelector('script[src="${scriptSrc}"]')) return;
-        var s = document.createElement("script");
-        s.src = "${scriptSrc}";
-        s.async = true;
-        document.head.appendChild(s);
-      })();
-    </script>
-  `;
-
-  return <div dangerouslySetInnerHTML={{ __html: htmlContent }} />;
-};
-
+import { VslPlayer } from "./VslPlayer";
 
 export function HeroSection() {
 
@@ -35,7 +15,7 @@ export function HeroSection() {
         <p className="mt-6 max-w-3xl text-lg md:text-2xl font-bold text-white drop-shadow-md">
           Descubra o método que já ajudou mais de 35.000 homens a proporcionarem orgasmos múltiplos e a liberarem jatos de prazer nas suas parceiras.
         </p>
-        <div className="mt-8 w-full">
+        <div className="mt-8 w-full max-w-3xl">
             <VslPlayer />
         </div>
         
