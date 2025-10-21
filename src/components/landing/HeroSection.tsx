@@ -5,6 +5,14 @@ import React from 'react';
 
 export function HeroSection() {
 
+  const handleScrollToOffer = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    const offerSection = document.getElementById('offer');
+    if (offerSection) {
+      offerSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center text-center overflow-hidden bg-black py-20">
       <div className="relative z-10 container mx-auto px-4 flex flex-col items-center">
@@ -41,7 +49,7 @@ export function HeroSection() {
           </p>
         </div>
         <div className="mt-12">
-          <CtaButton />
+          <CtaButton onClick={handleScrollToOffer} />
         </div>
       </div>
     </section>

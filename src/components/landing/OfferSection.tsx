@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 
 export function OfferSection() {
   return (
-    <section className="py-20 lg:py-32 bg-background">
+    <section id="offer" className="py-20 lg:py-32 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-md w-full mx-auto bg-card rounded-2xl shadow-2xl shadow-black/40 text-center text-primary-foreground p-6 lg:p-8 border-2 border-destructive">
           
