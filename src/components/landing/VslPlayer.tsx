@@ -13,7 +13,6 @@ const VslPlayer: React.FC = () => {
       return;
     }
 
-    // Prevent adding the script multiple times
     if (document.querySelector(`script[src="${scriptSrc}"]`)) {
         return;
     }
@@ -26,7 +25,6 @@ const VslPlayer: React.FC = () => {
     document.head.appendChild(script);
 
     return () => {
-      // Complete cleanup function
       if (scriptRef.current && scriptRef.current.parentNode) {
         scriptRef.current.parentNode.removeChild(scriptRef.current);
         scriptRef.current = null;
@@ -36,7 +34,6 @@ const VslPlayer: React.FC = () => {
       vturbElements.forEach(el => el.remove());
 
       if (containerRef.current) {
-        // Use a more specific selector if possible
         const playerDiv = containerRef.current.querySelector(`#${playerId}`);
         if (playerDiv) {
             playerDiv.innerHTML = '';
@@ -52,4 +49,4 @@ const VslPlayer: React.FC = () => {
   );
 };
 
-export { VslPlayer };
+export default VslPlayer;

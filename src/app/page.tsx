@@ -1,6 +1,5 @@
 import { Header } from '@/components/landing/Header';
 import { HeroSection } from '@/components/landing/HeroSection';
-import { VslPlayer } from '@/components/landing/VslPlayer';
 import { ProblemSection } from '@/components/landing/ProblemSection';
 import { PromiseSection } from '@/components/landing/PromiseSection';
 import { CourseSection } from '@/components/landing/CourseSection';
@@ -16,11 +15,6 @@ export default function Home() {
       <Header />
       <main className="flex-grow">
         <HeroSection />
-        <section className="py-12 lg:py-16 bg-white">
-          <div className="container mx-auto px-4">
-            <VslPlayer />
-          </div>
-        </section>
         <ProblemSection />
         <PromiseSection />
         <CourseSection />
