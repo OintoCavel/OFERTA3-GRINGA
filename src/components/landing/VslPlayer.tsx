@@ -13,6 +13,7 @@ const VslPlayer: React.FC = () => {
       return;
     }
 
+    // A PROVA DE FALHAS: Se o script já existe, não faz nada. Isso evita a duplicação que trava o player.
     if (document.querySelector(`script[src="${scriptSrc}"]`)) {
         return;
     }
@@ -25,6 +26,7 @@ const VslPlayer: React.FC = () => {
     document.head.appendChild(script);
 
     return () => {
+      // Limpeza completa para evitar conflitos de navegação
       if (scriptRef.current && scriptRef.current.parentNode) {
         scriptRef.current.parentNode.removeChild(scriptRef.current);
         scriptRef.current = null;
