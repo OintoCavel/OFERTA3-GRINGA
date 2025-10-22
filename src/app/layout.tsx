@@ -4,7 +4,7 @@ import './globals.css';
 import Script from 'next/script';
 
 export const metadata: Metadata = {
-  title: 'Orgasmic Unleashed',
+  title: 'O Truque do Orgasmo',
   description: 'Aprenda a fazer uma mulher gozar com intensidade.',
 };
 
