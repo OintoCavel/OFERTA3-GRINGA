@@ -1,4 +1,4 @@
-import { Zap, Lock, ShieldCheck, CheckCircle } from "lucide-react";
+import { Zap, Lock, ShieldCheck, CheckCircle, Gift, Check } from "lucide-react";
 import { CtaButton } from "./CtaButton";
 import { Button } from "../ui/button";
 
@@ -15,27 +15,26 @@ export function OfferSection() {
           </div>
 
           <h2 className="text-4xl lg:text-5xl font-black text-white">
-            Quanto vai custar tudo isso?
+            Garanta seu Acesso Imediato
           </h2>
           
-          <div className="mt-8 space-y-4 text-left text-lg text-muted-foreground">
-            <div className="flex justify-between items-center border-b border-border/50 pb-2">
-                <span>TODOS OS BÔNUS</span>
-                <span className="line-through">R$47,00</span>
+          <div className="mt-8 space-y-4 text-left text-lg text-white/90">
+            <div className="flex items-start gap-3">
+                <Check className="h-6 w-6 text-green-500 mt-1 flex-shrink-0" />
+                <span>Acesso vitalício ao curso completo com <span className="font-bold text-white">+40 aulas</span>.</span>
             </div>
-            <div className="flex justify-between items-center border-b border-border/50 pb-2">
-                <span>ACESSO VITALÍCIO AO CURSO</span>
-                <span className="line-through">R$47,00</span>
+            <div className="flex items-start gap-3">
+                <Check className="h-6 w-6 text-green-500 mt-1 flex-shrink-0" />
+                <span><span className="font-bold text-white">Bônus #1:</span> Técnicas para demorar mais para gozar.</span>
             </div>
-          </div>
-
-          <div className="my-8 flex flex-col items-center justify-center">
-            <span className="text-xl lg:text-2xl font-bold line-through text-muted-foreground">De R$94,00</span>
-            <p className="uppercase text-white font-bold mt-2">Total:</p>
-            <div className="flex items-baseline my-2">
-                <span className="text-6xl lg:text-8xl font-black text-primary">R$27,00</span>
+             <div className="flex items-start gap-3">
+                <Check className="h-6 w-6 text-green-500 mt-1 flex-shrink-0" />
+                <span><span className="font-bold text-white">Bônus #2:</span> Segredos para uma ereção mais firme.</span>
             </div>
-            <p className="text-sm text-muted-foreground">Últimas vagas a esse valor - Valor Promocional no PIX</p>
+            <div className="flex items-start gap-3">
+                <Check className="h-6 w-6 text-green-500 mt-1 flex-shrink-0" />
+                <span><span className="font-bold text-white">Guia de Posições</span> (E-book).</span>
+            </div>
           </div>
 
           <div className="mt-10">
