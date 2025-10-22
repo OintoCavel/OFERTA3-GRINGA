@@ -43,7 +43,7 @@ export function OfferSection() {
               <Button
                   className="bg-primary hover:bg-primary/90 text-primary-foreground font-black text-lg lg:text-xl py-8 px-10 rounded-md shadow-lg shadow-primary/30 transform transition-transform hover:scale-105 uppercase tracking-wider w-full"
               >
-                  QUERO FAZER ELA GOZAR COMIGO
+                  FAZER ELA GOZAR COMIGO
               </Button>
             </a>
           </div>
