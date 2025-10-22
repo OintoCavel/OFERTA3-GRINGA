@@ -21,7 +21,7 @@ export function OfferSection() {
           <div className="mt-8 space-y-4 text-left text-lg text-white/90">
             <div className="flex items-start gap-3">
                 <Check className="h-6 w-6 text-green-500 mt-1 flex-shrink-0" />
-                <span>Acesso vitalício ao curso completo com <span className="font-bold text-white">+40 aulas</span>.</span>
+                <span><span className="font-bold text-white">Truque do Orgasmo</span>: Acesso vitalício ao curso com <span className="font-bold text-white">+40 aulas</span>.</span>
             </div>
             <div className="flex items-start gap-3">
                 <Check className="h-6 w-6 text-green-500 mt-1 flex-shrink-0" />
