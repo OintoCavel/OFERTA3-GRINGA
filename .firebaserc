@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "studio-851887237-57899"
-  }
+    "default": "studio-851887237-57899",
+    "grin": "checkout-acd28"
+  },
+  "targets": {},
+  "etags": {}
 }
