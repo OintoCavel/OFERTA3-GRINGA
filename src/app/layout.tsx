@@ -23,7 +23,7 @@ export default function RootLayout({
           id="utmify-pixel-config"
           dangerouslySetInnerHTML={{
             __html: `
-              window.pixelId = "68f816d0a854355c218fa393";
+              window.pixelId = "68faec3ca96267be40c0a88a";
             `,
           }}
         />
