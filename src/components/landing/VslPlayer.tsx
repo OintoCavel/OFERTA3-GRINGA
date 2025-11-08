@@ -3,10 +3,12 @@ import React, { useEffect } from 'react';
 
 export function VslPlayer() {
   useEffect(() => {
-    const existingScript = document.querySelector('script[src="https://scripts.converteai.net/4bc12e78-b63c-4a40-af44-410d31d40924/players/690baea26813865f1566162f/v4/player.js"]');
+    const scriptSrc = "https://scripts.converteai.net/76aaf581-62f1-483b-bda7-1fd96884a050/players/690e9184a530b0ae7a43d57e/v4/player.js";
+    const existingScript = document.querySelector(`script[src="${scriptSrc}"]`);
+    
     if (!existingScript) {
       const script = document.createElement("script");
-      script.src = "https://scripts.converteai.net/4bc12e78-b63c-4a40-af44-410d31d40924/players/690baea26813865f1566162f/v4/player.js";
+      script.src = scriptSrc;
       script.async = true;
       document.head.appendChild(script);
     }
@@ -14,7 +16,7 @@ export function VslPlayer() {
 
   return (
     React.createElement('vturb-smartplayer', {
-      id: 'vid-690baea26813865f1566162f',
+      id: 'vid-690e9184a530b0ae7a43d57e',
       style: { display: 'block', margin: '0 auto', width: '100%', maxWidth: '400px' }
     })
   );
